@@ -1,2 +1,2 @@
 - setup-file:
-    local-name: /home/justin/catkin_ws/devel/setup.sh
+    local-name: /home/justin/ROS_Tutorials/devel/setup.sh

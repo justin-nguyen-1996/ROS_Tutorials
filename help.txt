@@ -1,0 +1,11 @@
+
+Creating a ROS workspace and packages
+======================================
+1. Create a folder that will act as the ROS workspace
+2. Create an src/ folder inside the workspace
+3. Run catkin_make in the top-level directory
+4. Make a folder inside src/ that will act as the package:
+   `cd src/`
+   `catkin_create_pkg <package_name> [depend1] [depend2]`
+5. Re-run catkin_make in the top-level directory
+6. Add the workspace to the ROS environment: `. devel/setup.bash`
