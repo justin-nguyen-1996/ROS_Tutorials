@@ -2,4 +2,4 @@
 source_root_dir = "/home/justin/ROS_Tutorials/src"
 whitelisted_packages = "".split(';') if "" != "" else []
 blacklisted_packages = "".split(';') if "" != "" else []
-underlay_workspaces = "/home/justin/catkin_ws/devel;/opt/ros/kinetic".split(';') if "/home/justin/catkin_ws/devel;/opt/ros/kinetic" != "" else []
+underlay_workspaces = "/home/justin/ROS_Tutorials/devel;/home/justin/catkin_ws/devel;/opt/ros/kinetic".split(';') if "/home/justin/ROS_Tutorials/devel;/home/justin/catkin_ws/devel;/opt/ros/kinetic" != "" else []
