@@ -11,8 +11,20 @@ Creating a ROS workspace and packages
 6. Add the workspace to the ROS environment: `. devel/setup.bash`
 
 
+
 Running a ROS program/package
 ==============================
 1. Start the ROS master: `roscore`
 2. To run an executable (node): `rosrun <package> <node>` or `rosrun <package> <node> __name:=<new name>`
-3. To see the ROS computational tree: `rosrun rqt_graph rqt_graph`
+3. To see the ROS computational tree: `rqt_graph`
+4. Also helpful: `rosnode list` and `rostopic list`
+
+
+
+Creating a ROS msg and srv
+===========================
+1. http://wiki.ros.org/ROS/Tutorials/CreatingMsgAndSrv
+
+
+
+

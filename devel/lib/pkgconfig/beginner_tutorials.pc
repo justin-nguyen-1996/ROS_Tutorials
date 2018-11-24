@@ -3,6 +3,6 @@ prefix=/home/justin/Github/ROS_Tutorials/devel
 Name: beginner_tutorials
 Description: Description of beginner_tutorials
 Version: 0.0.0
-Cflags: 
+Cflags: -I/home/justin/Github/ROS_Tutorials/devel/include
 Libs: -L/home/justin/Github/ROS_Tutorials/devel/lib 
-Requires: 
+Requires: message_runtime
