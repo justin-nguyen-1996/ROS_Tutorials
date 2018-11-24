@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/justin/ROS_Tutorials/src
+CMAKE_SOURCE_DIR = /home/justin/Github/ROS_Tutorials/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/justin/ROS_Tutorials/build
+CMAKE_BINARY_DIR = /home/justin/Github/ROS_Tutorials/build
 
 # Utility rule file for std_msgs_generate_messages_lisp.
 
@@ -63,10 +63,10 @@ beginner_tutorials/CMakeFiles/std_msgs_generate_messages_lisp.dir/build: std_msg
 .PHONY : beginner_tutorials/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
 
 beginner_tutorials/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean:
-	cd /home/justin/ROS_Tutorials/build/beginner_tutorials && $(CMAKE_COMMAND) -P CMakeFiles/std_msgs_generate_messages_lisp.dir/cmake_clean.cmake
+	cd /home/justin/Github/ROS_Tutorials/build/beginner_tutorials && $(CMAKE_COMMAND) -P CMakeFiles/std_msgs_generate_messages_lisp.dir/cmake_clean.cmake
 .PHONY : beginner_tutorials/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
 
 beginner_tutorials/CMakeFiles/std_msgs_generate_messages_lisp.dir/depend:
-	cd /home/justin/ROS_Tutorials/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/justin/ROS_Tutorials/src /home/justin/ROS_Tutorials/src/beginner_tutorials /home/justin/ROS_Tutorials/build /home/justin/ROS_Tutorials/build/beginner_tutorials /home/justin/ROS_Tutorials/build/beginner_tutorials/CMakeFiles/std_msgs_generate_messages_lisp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/justin/Github/ROS_Tutorials/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/justin/Github/ROS_Tutorials/src /home/justin/Github/ROS_Tutorials/src/beginner_tutorials /home/justin/Github/ROS_Tutorials/build /home/justin/Github/ROS_Tutorials/build/beginner_tutorials /home/justin/Github/ROS_Tutorials/build/beginner_tutorials/CMakeFiles/std_msgs_generate_messages_lisp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : beginner_tutorials/CMakeFiles/std_msgs_generate_messages_lisp.dir/depend
 

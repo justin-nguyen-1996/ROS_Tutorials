@@ -4,5 +4,5 @@ PROJECT_PKG_CONFIG_INCLUDE_DIRS = "".split(';') if "" != "" else []
 PROJECT_CATKIN_DEPENDS = "".replace(';', ' ')
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "".split(';') if "" != "" else []
 PROJECT_NAME = "beginner_tutorials"
-PROJECT_SPACE_DIR = "/home/justin/ROS_Tutorials/devel"
+PROJECT_SPACE_DIR = "/home/justin/Github/ROS_Tutorials/devel"
 PROJECT_VERSION = "0.0.0"

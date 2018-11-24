@@ -14,4 +14,5 @@ Creating a ROS workspace and packages
 Running a ROS program/package
 ==============================
 1. Start the ROS master: `roscore`
-2. 
+2. To run an executable (node): `rosrun <package> <node>` or `rosrun <package> <node> __name:=<new name>`
+3. To see the ROS computational tree: `rosrun rqt_graph rqt_graph`

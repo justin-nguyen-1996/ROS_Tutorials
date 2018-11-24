@@ -7,4 +7,9 @@
 # new environment variables
 
 # modified environment variables
-export PWD="/home/justin/ROS_Tutorials/build"
+export CMAKE_PREFIX_PATH="/home/justin/Github/ROS_Tutorials/devel:/opt/ros/kinetic"
+export LD_LIBRARY_PATH="/opt/ros/kinetic/lib:/opt/ros/kinetic/lib/x86_64-linux-gnu"
+export PKG_CONFIG_PATH="/opt/ros/kinetic/lib/pkgconfig:/opt/ros/kinetic/lib/x86_64-linux-gnu/pkgconfig"
+export PWD="/home/justin/Github/ROS_Tutorials/build"
+export ROSLISP_PACKAGE_DIRECTORIES="/home/justin/Github/ROS_Tutorials/devel/share/common-lisp"
+export ROS_PACKAGE_PATH="/home/justin/Github/ROS_Tutorials/src:/opt/ros/kinetic/share"
