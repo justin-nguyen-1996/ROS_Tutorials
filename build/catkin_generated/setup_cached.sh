@@ -8,3 +8,4 @@
 
 # modified environment variables
 export PWD="/home/justin/Github/ROS_Tutorials/build"
+export PYTHONPATH="/home/justin/Github/ROS_Tutorials/devel/lib/python2.7/dist-packages:$PYTHONPATH"
