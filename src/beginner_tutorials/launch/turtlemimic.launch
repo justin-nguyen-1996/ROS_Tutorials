@@ -14,6 +14,15 @@
     </node>
 
     <!--
+    <group ns="my_mimic">
+        <node pkg="turtlesim" name="mimic" type="mimic">
+            <remap from="input" to="/turtlesim1/turtle1"/>
+            <remap from="output" to="/turtlesim4/turtle1"/>
+        </node>
+    </group>
+    -->
+
+    <!--
     <node pkg="turtlesim" name="mimic" type="mimic">
         <remap from="input/pose" to="turtlesim1/turtle1/pose"/>
         <remap from="output/cmd_vel" to="turtlesim4/turtle1/cmd_vel"/>
