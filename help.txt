@@ -27,4 +27,6 @@ Creating a ROS msg and srv
 
 
 
-
+Miscellaneous Info
+===================
+1. The build/ folder sometimes needs to be removed for the `catkin_make` command
