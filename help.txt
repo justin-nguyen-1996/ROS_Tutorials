@@ -57,10 +57,11 @@ Recording data (creating a bag file)
 ===========================
 1. Run `rosbag record -a`
 2. Or run `rosbag record -O subset <topic_name1> <topic_name2>`
-2. Close the terminal running this command to stop recording
+3. Close the terminal running this command to stop recording
 
 
 
 Miscellaneous Info
 ===================
-1.
+1. Find the packages a package depends on: `rospack depends <package_name>`
+2. Rename a node: `rosrun <package_name> <node_name> __name:=<new_name>`
