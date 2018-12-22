@@ -7,13 +7,13 @@ import struct
 
 
 class AddTwoIntsRequest(genpy.Message):
-  _md5sum = "36d09b846be0b371c5f190354dd3153e"
+  _md5sum = "4cdda92a210b31b5470cd7639a065ac2"
   _type = "beginner_tutorials/AddTwoIntsRequest"
   _has_header = False #flag to mark the presence of a Header object
   _full_text = """int64 a
-int64 b
+int64 c
 """
-  __slots__ = ['a','b']
+  __slots__ = ['a','c']
   _slot_types = ['int64','int64']
 
   def __init__(self, *args, **kwds):
@@ -24,7 +24,7 @@ int64 b
     changes.  You cannot mix in-order arguments and keyword arguments.
 
     The available fields are:
-       a,b
+       a,c
 
     :param args: complete set of field values, in .msg order
     :param kwds: use keyword arguments corresponding to message field names
@@ -35,11 +35,11 @@ int64 b
       #message fields cannot be None, assign default values for those that are
       if self.a is None:
         self.a = 0
-      if self.b is None:
-        self.b = 0
+      if self.c is None:
+        self.c = 0
     else:
       self.a = 0
-      self.b = 0
+      self.c = 0
 
   def _get_types(self):
     """
@@ -54,7 +54,7 @@ int64 b
     """
     try:
       _x = self
-      buff.write(_get_struct_2q().pack(_x.a, _x.b))
+      buff.write(_get_struct_2q().pack(_x.a, _x.c))
     except struct.error as se: self._check_types(struct.error("%s: '%s' when writing '%s'" % (type(se), str(se), str(locals().get('_x', self)))))
     except TypeError as te: self._check_types(ValueError("%s: '%s' when writing '%s'" % (type(te), str(te), str(locals().get('_x', self)))))
 
@@ -68,7 +68,7 @@ int64 b
       _x = self
       start = end
       end += 16
-      (_x.a, _x.b,) = _get_struct_2q().unpack(str[start:end])
+      (_x.a, _x.c,) = _get_struct_2q().unpack(str[start:end])
       return self
     except struct.error as e:
       raise genpy.DeserializationError(e) #most likely buffer underfill
@@ -82,7 +82,7 @@ int64 b
     """
     try:
       _x = self
-      buff.write(_get_struct_2q().pack(_x.a, _x.b))
+      buff.write(_get_struct_2q().pack(_x.a, _x.c))
     except struct.error as se: self._check_types(struct.error("%s: '%s' when writing '%s'" % (type(se), str(se), str(locals().get('_x', self)))))
     except TypeError as te: self._check_types(ValueError("%s: '%s' when writing '%s'" % (type(te), str(te), str(locals().get('_x', self)))))
 
@@ -97,7 +97,7 @@ int64 b
       _x = self
       start = end
       end += 16
-      (_x.a, _x.b,) = _get_struct_2q().unpack(str[start:end])
+      (_x.a, _x.c,) = _get_struct_2q().unpack(str[start:end])
       return self
     except struct.error as e:
       raise genpy.DeserializationError(e) #most likely buffer underfill
@@ -221,6 +221,6 @@ def _get_struct_q():
     return _struct_q
 class AddTwoInts(object):
   _type          = 'beginner_tutorials/AddTwoInts'
-  _md5sum = '6a2e34150c00229791cc89ff309fff21'
+  _md5sum = '19d0d12051a7e6cefb8f56265d0b4233'
   _request_class  = AddTwoIntsRequest
   _response_class = AddTwoIntsResponse

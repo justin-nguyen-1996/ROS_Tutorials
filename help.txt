@@ -1,4 +1,30 @@
 
+ROS directory structure
+========================
+├── build
+│   ├── Nothing that important
+│   └── Needs to be removed for a "make clean"
+│
+├── devel
+│   ├── setup.bash --> the script that needs to be sourced to set certain environment variables (e.g. $ROS_PACKAGE_PATH)
+│   └── devel
+│       ├── include --> where the header files are placed by default
+│       └── lib     --> where the executables are placed by default
+│
+└── src
+    ├── beginner_tutorials --> packages
+    │   ├── CMakeLists.txt
+    │   ├── include
+    │   ├── launch     --> roslaunch files
+    │   ├── msg        --> contains message files (which define new message types)
+    │   ├── package.xml
+    │   ├── scripts    --> .py files
+    │   ├── src        --> .cpp files
+    │   └── srv        --> contains service files (client sends a request and server sends a response)
+    └── CMakeLists.txt --> /opt/ros/kinetic/share/catkin/cmake/toplevel.cmake
+
+
+
 Creating a ROS workspace and packages
 ======================================
 1. Create a folder that will act as the ROS workspace
@@ -29,4 +55,4 @@ Creating a ROS msg and srv
 
 Miscellaneous Info
 ===================
-1. The build/ folder sometimes needs to be removed for the `catkin_make` command
+1.

@@ -22,7 +22,7 @@ class AddTwoIntsRequest {
     if (initObj === null) {
       // initObj === null is a special case for deserialization where we don't initialize fields
       this.a = null;
-      this.b = null;
+      this.c = null;
     }
     else {
       if (initObj.hasOwnProperty('a')) {
@@ -31,11 +31,11 @@ class AddTwoIntsRequest {
       else {
         this.a = 0;
       }
-      if (initObj.hasOwnProperty('b')) {
-        this.b = initObj.b
+      if (initObj.hasOwnProperty('c')) {
+        this.c = initObj.c
       }
       else {
-        this.b = 0;
+        this.c = 0;
       }
     }
   }
@@ -44,8 +44,8 @@ class AddTwoIntsRequest {
     // Serializes a message object of type AddTwoIntsRequest
     // Serialize message field [a]
     bufferOffset = _serializer.int64(obj.a, buffer, bufferOffset);
-    // Serialize message field [b]
-    bufferOffset = _serializer.int64(obj.b, buffer, bufferOffset);
+    // Serialize message field [c]
+    bufferOffset = _serializer.int64(obj.c, buffer, bufferOffset);
     return bufferOffset;
   }
 
@@ -55,8 +55,8 @@ class AddTwoIntsRequest {
     let data = new AddTwoIntsRequest(null);
     // Deserialize message field [a]
     data.a = _deserializer.int64(buffer, bufferOffset);
-    // Deserialize message field [b]
-    data.b = _deserializer.int64(buffer, bufferOffset);
+    // Deserialize message field [c]
+    data.c = _deserializer.int64(buffer, bufferOffset);
     return data;
   }
 
@@ -71,14 +71,14 @@ class AddTwoIntsRequest {
 
   static md5sum() {
     //Returns md5sum for a message object
-    return '36d09b846be0b371c5f190354dd3153e';
+    return '4cdda92a210b31b5470cd7639a065ac2';
   }
 
   static messageDefinition() {
     // Returns full string definition for message
     return `
     int64 a
-    int64 b
+    int64 c
     
     `;
   }
@@ -96,11 +96,11 @@ class AddTwoIntsRequest {
       resolved.a = 0
     }
 
-    if (msg.b !== undefined) {
-      resolved.b = msg.b;
+    if (msg.c !== undefined) {
+      resolved.c = msg.c;
     }
     else {
-      resolved.b = 0
+      resolved.c = 0
     }
 
     return resolved;
@@ -182,6 +182,6 @@ class AddTwoIntsResponse {
 module.exports = {
   Request: AddTwoIntsRequest,
   Response: AddTwoIntsResponse,
-  md5sum() { return '6a2e34150c00229791cc89ff309fff21'; },
+  md5sum() { return '19d0d12051a7e6cefb8f56265d0b4233'; },
   datatype() { return 'beginner_tutorials/AddTwoInts'; }
 };
