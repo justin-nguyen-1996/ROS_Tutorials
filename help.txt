@@ -53,6 +53,14 @@ Creating a ROS msg and srv
 
 
 
+Recording data (creating a bag file)
+===========================
+1. Run `rosbag record -a`
+2. Or run `rosbag record -O subset <topic_name1> <topic_name2>`
+2. Close the terminal running this command to stop recording
+
+
+
 Miscellaneous Info
 ===================
 1.
