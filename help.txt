@@ -74,6 +74,13 @@ Using Gazebo with ROS
 
 
 
+Using TF
+=========
+1. To see the tree showing how the frames are related: `rosrun tf view_frames`
+2. To see the transform b/w two frames: `rosrun tf tf_echo [reference_frame] [target_frame]`
+
+
+
 Miscellaneous Info
 ===================
 1. Install a package using apt-get: `sudo apt-get install ros-kinetic-pr2-teleop`
