@@ -25,6 +25,13 @@ ROS directory structure
 
 
 
+Tutorials
+==========
+1. http://wiki.ros.org/ROS/Tutorials
+2. http://wiki.ros.org/simulator_gazebo/Tutorials
+
+
+
 Creating a ROS workspace and packages
 ======================================
 1. Create a folder that will act as the ROS workspace
@@ -61,7 +68,17 @@ Recording data (creating a bag file)
 
 
 
+Using Gazebo with ROS
+===========================
+1. Launch an empty world: `roslaunch gazebo_ros empty_world.launch`
+
+
+
 Miscellaneous Info
 ===================
-1. Find the packages a package depends on: `rospack depends <package_name>`
-2. Rename a node: `rosrun <package_name> <node_name> __name:=<new_name>`
+1. Install a package using apt-get: `sudo apt-get install ros-kinetic-pr2-teleop`
+2. Find the packages a package depends on: `rospack depends <package_name>`
+3. Rename a node: `rosrun <package_name> <node_name> __name:=<new_name>`
+4. Execute a service: `rosservice call` tab-tab tab-tab (then just fill out the auto-generated fields)
+5. URDF (Universal Robotic Description Format) - a type of XML format used to describe all elements of a robot
+6. SDF (Simulation Description Format) - a type of format used to describe all elements of the robot and its world
