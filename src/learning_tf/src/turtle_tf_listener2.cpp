@@ -32,8 +32,9 @@ int main(int argc, char** argv){
       // Find the transform that gives turtle1's data in turtle2's frame of reference.
       // Find the latest transform and store it in the `transform` object.
       ros::Time now = ros::Time::now();
-      listener.waitForTransform("/turtle2", "/turtle1", now, ros::Duration(3.0));
-      listener.lookupTransform("/turtle2", "/turtle1", now, transform); // Turtle 2 follows turtle 1.
+      ros::Time past = now - ros::Duration(5.0);
+      listener.waitForTransform("/turtle2", now, "/turtle1", past, "/world", ros::Duration(1.0));
+      listener.lookupTransform("/turtle2", now, "/turtle1", past, "/world", transform); // Turtle 2 follows turtle 1.
 //       listener.lookupTransform("/turtle2", "carrot1", ros::Time(0), transform); // Turtle 2 follows carrot1
     }
     catch (tf::TransformException &ex) {
