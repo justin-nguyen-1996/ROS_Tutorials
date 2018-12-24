@@ -12,7 +12,7 @@ int main(int argc, char** argv){
   ros::NodeHandle node;
 
   // Spawn a new turtle in the same world (window) as the first turtle
-  // TODO: 
+  // TODO:
   ros::service::waitForService("spawn");
   ros::ServiceClient add_turtle =
     node.serviceClient<turtlesim::Spawn>("spawn");
@@ -31,8 +31,8 @@ int main(int argc, char** argv){
     try{
       // Find the transform that gives turtle1's data in turtle2's frame of reference.
       // Find the latest transform and store it in the `transform` object.
-      // Turtle 2 is trying to follow turtle 1.
-      listener.lookupTransform("/turtle2", "/turtle1", ros::Time(0), transform);
+//       listener.lookupTransform("/turtle2", "/turtle1", ros::Time(0), transform); // Turtle 2 follows turtle 1.
+      listener.lookupTransform("/turtle2", "carrot1", ros::Time(0), transform); // Turtle 2 follows carrot1
     }
     catch (tf::TransformException &ex) {
       ROS_ERROR("%s",ex.what());
