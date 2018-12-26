@@ -81,7 +81,9 @@ Using Gazebo with ROS
 Using TF
 =========
 1. To see the tree showing how the frames are related: `rosrun tf view_frames`
-2. To see the transform b/w two frames: `rosrun tf tf_echo [reference_frame] [target_frame]`
+2. To see the transform b/w two frames: `rosrun tf tf_echo <reference_frame> <target_frame>`
+3. Can check timestamps using: `rosrun tf tf_monitor <reference_frame> <target_frame>`
+   - maybe also just `tf_monitor`
 
 
 
@@ -93,3 +95,6 @@ Miscellaneous Info
 4. Execute a service: `rosservice call` tab-tab tab-tab (then just fill out the auto-generated fields)
 5. URDF (Universal Robotic Description Format) - a type of XML format used to describe all elements of a robot
 6. SDF (Simulation Description Format) - a type of format used to describe all elements of the robot and its world
+7. Output to stdout when using a .launch file
+   - In the node definition, set the following: output="screen"
+   - Or run the .launch file using the --screen flag
