@@ -18,7 +18,7 @@ int main(int argc, char** argv){
   while(n.ok()){
     //generate some fake data for our laser scan
     for(unsigned int i = 0; i < num_readings; ++i){
-      ranges[i] = count;
+      ranges[i] = 5;
       intensities[i] = 100 + count;
     }
     ros::Time scan_time = ros::Time::now();

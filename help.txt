@@ -98,3 +98,10 @@ Miscellaneous Info
 7. Output to stdout when using a .launch file
    - In the node definition, set the following: output="screen"
    - Or run the .launch file using the --screen flag
+8. Standard dependencies when creating a package
+   - roscpp
+   - std_msgs
+   - tf
+   - sensor_msgs
+9. If the LaserScan messages aren't being displayed in rviz but everything looks right
+   - Try setting the "size" of the LaserScan points to be bigger in rviz (e.g. 0.05 instead of 0.01)
