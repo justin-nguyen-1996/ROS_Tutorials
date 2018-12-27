@@ -1,0 +1,4 @@
+
+<launch>
+    <node name="fake_point_cloud" pkg="fake_point_cloud" type="fake_point_cloud"></node>
+</launch>
