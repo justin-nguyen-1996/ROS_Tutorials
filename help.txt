@@ -40,6 +40,13 @@ Creating a ROS workspace and packages
 4. Make a folder inside src/ that will act as the package:
    `cd src/`
    `catkin_create_pkg <package_name> [depend1] [depend2]`
+   - Standard dependencies when creating a package
+     - roscpp
+     - std_msgs
+     - tf
+     - sensor_msgs
+     - nav_msgs
+     - geometry_msgs
 5. Re-run catkin_make in the top-level directory
 6. Add the workspace to the ROS environment: `. devel/setup.bash`
 7. Create the actual source file: src/<package_name>/<source_files.cpp>
@@ -87,6 +94,25 @@ Using TF
 
 
 
+Launch Files
+=============
+1. Typical fields for a node
+   - <node name="laser_pub" pkg="lidar" type="lidar" args="-d temp -s $(arg home_dir)" respawn="false" output="screen"/>
+   - "pkg" is the package name
+   - "type" is the name
+   - "output" can be "screen" or "log", where screen is stdout.
+      Can also output to stdout by running the .launch file with --screen flag
+2. Can define variables and execute shell-esque commands
+   - <arg name="home_dir" default="$(find full_sys)"/> 
+     - This creates a variable in the .launch file called "home_dir"
+     - The variable is set to the directory path where "full_sys" is found (i.e. the output of $(find) for full_sys)
+   - <arg name="rviz_file" default="$(arg home_dir)/cfg/robot.rviz"/>
+     - This creates a variable caleld "rviz_file"
+     - The variable is set to $(home_dir)/cfg/robot.rviz
+     - Note the variable substitution syntax of $(arg home_dir)
+
+
+
 Miscellaneous Info
 ===================
 1. Install a package using apt-get: `sudo apt-get install ros-kinetic-pr2-teleop`
@@ -95,13 +121,5 @@ Miscellaneous Info
 4. Execute a service: `rosservice call` tab-tab tab-tab (then just fill out the auto-generated fields)
 5. URDF (Universal Robotic Description Format) - a type of XML format used to describe all elements of a robot
 6. SDF (Simulation Description Format) - a type of format used to describe all elements of the robot and its world
-7. Output to stdout when using a .launch file
-   - In the node definition, set the following: output="screen"
-   - Or run the .launch file using the --screen flag
-8. Standard dependencies when creating a package
-   - roscpp
-   - std_msgs
-   - tf
-   - sensor_msgs
-9. If the LaserScan messages aren't being displayed in rviz but everything looks right
+7. If the LaserScan messages aren't being displayed in rviz but everything looks right
    - Try setting the "size" of the LaserScan points to be bigger in rviz (e.g. 0.05 instead of 0.01)
