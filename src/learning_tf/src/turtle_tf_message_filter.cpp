@@ -22,19 +22,20 @@ private:
   std::string target_frame_;
 
   //  Callback to register with tf::MessageFilter to be called when transforms are available
-  void msgCallback(const boost::shared_ptr<const geometry_msgs::PointStamped>& point_ptr) 
+//   void msgCallback(const boost::shared_ptr<const geometry_msgs::PointStamped>& point_ptr)
+  void msgCallback(const geometry_msgs::PointStampedConstPtr& point_ptr)
   {
     geometry_msgs::PointStamped point_out;
-    try 
+    try
     {
       tf_.transformPoint(target_frame_, *point_ptr, point_out);
-      
-      printf("point of turtle 3 in frame of turtle 1 Position(x:%f y:%f z:%f)\n", 
+
+      printf("point of turtle 3 in frame of turtle 1 Position(x:%f y:%f z:%f)\n",
              point_out.point.x,
              point_out.point.y,
              point_out.point.z);
     }
-    catch (tf::TransformException &ex) 
+    catch (tf::TransformException &ex)
     {
       printf ("Failure %s\n", ex.what()); //Print exception which was caught
     }
@@ -47,5 +48,5 @@ int main(int argc, char ** argv)
 {
   ros::init(argc, argv, "pose_drawer"); //Init ROS
   PoseDrawer pd; //Construct class
-  ros::spin(); // Run until interupted 
+  ros::spin(); // Run until interupted
 };
