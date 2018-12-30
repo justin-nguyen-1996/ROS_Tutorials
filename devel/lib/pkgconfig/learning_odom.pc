@@ -1,8 +1,1 @@
-prefix=/home/justin/Github/ROS_Tutorials/devel
-
-Name: learning_odom
-Description: Description of learning_odom
-Version: 0.0.0
-Cflags: 
-Libs: -L/home/justin/Github/ROS_Tutorials/devel/lib 
-Requires: 
+/home/justin/Github/ROS_Tutorials/devel/.private/learning_odom/lib/pkgconfig/learning_odom.pc

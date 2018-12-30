@@ -1,8 +1,0 @@
-prefix=/home/justin/Github/ROS_Tutorials/install_isolated
-
-Name: laser_scan_intro
-Description: Description of laser_scan_intro
-Version: 0.0.0
-Cflags: 
-Libs: -L/home/justin/Github/ROS_Tutorials/install_isolated/lib 
-Requires: 

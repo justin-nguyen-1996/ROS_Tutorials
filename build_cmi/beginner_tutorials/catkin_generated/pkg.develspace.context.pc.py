@@ -1,8 +1,0 @@
-# generated from catkin/cmake/template/pkg.context.pc.in
-CATKIN_PACKAGE_PREFIX = ""
-PROJECT_PKG_CONFIG_INCLUDE_DIRS = "/home/justin/Github/ROS_Tutorials/devel_cmi/include".split(';') if "/home/justin/Github/ROS_Tutorials/devel_cmi/include" != "" else []
-PROJECT_CATKIN_DEPENDS = "message_runtime".replace(';', ' ')
-PKG_CONFIG_LIBRARIES_WITH_PREFIX = "".split(';') if "" != "" else []
-PROJECT_NAME = "beginner_tutorials"
-PROJECT_SPACE_DIR = "/home/justin/Github/ROS_Tutorials/devel_cmi"
-PROJECT_VERSION = "0.0.0"

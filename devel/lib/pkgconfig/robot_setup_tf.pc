@@ -1,8 +1,1 @@
-prefix=/home/justin/Github/ROS_Tutorials/devel
-
-Name: robot_setup_tf
-Description: Description of robot_setup_tf
-Version: 0.0.0
-Cflags: 
-Libs: -L/home/justin/Github/ROS_Tutorials/devel/lib 
-Requires: 
+/home/justin/Github/ROS_Tutorials/devel/.private/robot_setup_tf/lib/pkgconfig/robot_setup_tf.pc

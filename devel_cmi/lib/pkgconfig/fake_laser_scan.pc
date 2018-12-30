@@ -1,8 +1,0 @@
-prefix=/home/justin/Github/ROS_Tutorials/devel_cmi
-
-Name: fake_laser_scan
-Description: Description of fake_laser_scan
-Version: 0.0.0
-Cflags: 
-Libs: -L/home/justin/Github/ROS_Tutorials/devel_cmi/lib 
-Requires: 

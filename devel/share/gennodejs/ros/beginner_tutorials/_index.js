@@ -1,7 +1,1 @@
-
-"use strict";
-
-module.exports = {
-  msg: require('./msg/_index.js'),
-  srv: require('./srv/_index.js')
-};
+/home/justin/Github/ROS_Tutorials/devel/.private/beginner_tutorials/share/gennodejs/ros/beginner_tutorials/_index.js

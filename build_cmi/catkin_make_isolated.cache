@@ -1,2 +1,0 @@
-beginner_tutorials:fake_laser_scan:fake_point_cloud:laser_scan_intro:learning_odom:learning_tf:learning_tf2:robot_setup_tf:using_markers
--G Unix Makefiles -DCATKIN_DEVEL_PREFIX=/home/justin/Github/ROS_Tutorials/devel_cmi -DCMAKE_INSTALL_PREFIX=/home/justin/Github/ROS_Tutorials/install_isolated

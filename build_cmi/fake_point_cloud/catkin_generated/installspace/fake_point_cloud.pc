@@ -1,8 +1,0 @@
-prefix=/home/justin/Github/ROS_Tutorials/install_isolated
-
-Name: fake_point_cloud
-Description: Description of fake_point_cloud
-Version: 0.0.0
-Cflags: 
-Libs: -L/home/justin/Github/ROS_Tutorials/install_isolated/lib 
-Requires: 

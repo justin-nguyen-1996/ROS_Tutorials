@@ -1,4 +1,1 @@
-# generated from genmsg/cmake/pkg-msg-paths.cmake.develspace.in
-
-set(beginner_tutorials_MSG_INCLUDE_DIRS "/home/justin/Github/ROS_Tutorials/src/beginner_tutorials/msg")
-set(beginner_tutorials_MSG_DEPENDENCIES std_msgs)
+/home/justin/Github/ROS_Tutorials/devel/.private/beginner_tutorials/share/beginner_tutorials/cmake/beginner_tutorials-msg-paths.cmake

@@ -1,8 +1,1 @@
-prefix=/home/justin/Github/ROS_Tutorials/devel
-
-Name: laser_scan_intro
-Description: Description of laser_scan_intro
-Version: 0.0.0
-Cflags: 
-Libs: -L/home/justin/Github/ROS_Tutorials/devel/lib 
-Requires: 
+/home/justin/Github/ROS_Tutorials/devel/.private/laser_scan_intro/lib/pkgconfig/laser_scan_intro.pc
