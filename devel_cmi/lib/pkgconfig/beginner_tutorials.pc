@@ -1,0 +1,8 @@
+prefix=/home/justin/Github/ROS_Tutorials/devel_cmi
+
+Name: beginner_tutorials
+Description: Description of beginner_tutorials
+Version: 0.0.0
+Cflags: -I/home/justin/Github/ROS_Tutorials/devel_cmi/include
+Libs: -L/home/justin/Github/ROS_Tutorials/devel_cmi/lib 
+Requires: message_runtime
