@@ -1,4 +1,0 @@
-learning_odom
-/home/justin/Github/ROS_Tutorials/devel/.private/learning_odom/share/learning_odom/cmake/learning_odomConfig-version.cmake /home/justin/Github/ROS_Tutorials/devel/share/learning_odom/cmake/learning_odomConfig-version.cmake
-/home/justin/Github/ROS_Tutorials/devel/.private/learning_odom/share/learning_odom/cmake/learning_odomConfig.cmake /home/justin/Github/ROS_Tutorials/devel/share/learning_odom/cmake/learning_odomConfig.cmake
-/home/justin/Github/ROS_Tutorials/devel/.private/learning_odom/lib/pkgconfig/learning_odom.pc /home/justin/Github/ROS_Tutorials/devel/lib/pkgconfig/learning_odom.pc

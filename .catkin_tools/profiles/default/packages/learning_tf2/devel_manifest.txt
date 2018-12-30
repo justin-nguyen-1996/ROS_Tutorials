@@ -1,8 +1,0 @@
-learning_tf2
-/home/justin/Github/ROS_Tutorials/devel/.private/learning_tf2/share/learning_tf2/cmake/learning_tf2Config-version.cmake /home/justin/Github/ROS_Tutorials/devel/share/learning_tf2/cmake/learning_tf2Config-version.cmake
-/home/justin/Github/ROS_Tutorials/devel/.private/learning_tf2/share/learning_tf2/cmake/learning_tf2Config.cmake /home/justin/Github/ROS_Tutorials/devel/share/learning_tf2/cmake/learning_tf2Config.cmake
-/home/justin/Github/ROS_Tutorials/devel/.private/learning_tf2/lib/pkgconfig/learning_tf2.pc /home/justin/Github/ROS_Tutorials/devel/lib/pkgconfig/learning_tf2.pc
-/home/justin/Github/ROS_Tutorials/devel/.private/learning_tf2/lib/learning_tf2/frame_tf2_broadcaster /home/justin/Github/ROS_Tutorials/devel/lib/learning_tf2/frame_tf2_broadcaster
-/home/justin/Github/ROS_Tutorials/devel/.private/learning_tf2/lib/learning_tf2/static_turtle_tf2_broadcaster /home/justin/Github/ROS_Tutorials/devel/lib/learning_tf2/static_turtle_tf2_broadcaster
-/home/justin/Github/ROS_Tutorials/devel/.private/learning_tf2/lib/learning_tf2/turtle_tf2_listener /home/justin/Github/ROS_Tutorials/devel/lib/learning_tf2/turtle_tf2_listener
-/home/justin/Github/ROS_Tutorials/devel/.private/learning_tf2/lib/learning_tf2/turtle_tf2_broadcaster /home/justin/Github/ROS_Tutorials/devel/lib/learning_tf2/turtle_tf2_broadcaster

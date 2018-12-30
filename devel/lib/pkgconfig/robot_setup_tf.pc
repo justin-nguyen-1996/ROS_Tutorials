@@ -1,1 +1,0 @@
-/home/justin/Github/ROS_Tutorials/devel/.private/robot_setup_tf/lib/pkgconfig/robot_setup_tf.pc

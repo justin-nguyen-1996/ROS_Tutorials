@@ -1,6 +1,0 @@
-using_markers
-/home/justin/Github/ROS_Tutorials/devel/.private/using_markers/share/using_markers/cmake/using_markersConfig-version.cmake /home/justin/Github/ROS_Tutorials/devel/share/using_markers/cmake/using_markersConfig-version.cmake
-/home/justin/Github/ROS_Tutorials/devel/.private/using_markers/share/using_markers/cmake/using_markersConfig.cmake /home/justin/Github/ROS_Tutorials/devel/share/using_markers/cmake/using_markersConfig.cmake
-/home/justin/Github/ROS_Tutorials/devel/.private/using_markers/lib/using_markers/points_and_lines /home/justin/Github/ROS_Tutorials/devel/lib/using_markers/points_and_lines
-/home/justin/Github/ROS_Tutorials/devel/.private/using_markers/lib/using_markers/basic_shapes /home/justin/Github/ROS_Tutorials/devel/lib/using_markers/basic_shapes
-/home/justin/Github/ROS_Tutorials/devel/.private/using_markers/lib/pkgconfig/using_markers.pc /home/justin/Github/ROS_Tutorials/devel/lib/pkgconfig/using_markers.pc

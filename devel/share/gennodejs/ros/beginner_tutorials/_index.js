@@ -1,1 +1,0 @@
-/home/justin/Github/ROS_Tutorials/devel/.private/beginner_tutorials/share/gennodejs/ros/beginner_tutorials/_index.js
