@@ -48,6 +48,8 @@ Creating a ROS workspace and packages
      - sensor_msgs
      - nav_msgs
      - laser_geometry
+     - message_generation
+     - message_runtime
 5. Re-run catkin_make in the top-level directory
 6. Add the workspace to the ROS environment: `. devel/setup.bash`
 7. Create the actual source file: src/<package_name>/<source_files.cpp>
@@ -104,13 +106,22 @@ Launch Files
    - "output" can be "screen" or "log", where screen is stdout.
       Can also output to stdout by running the .launch file with --screen flag
 2. Can define variables and execute shell-esque commands
-   - <arg name="home_dir" default="$(find full_sys)"/> 
+   - <arg name="home_dir" default="$(find full_sys)"/>
      - This creates a variable in the .launch file called "home_dir"
      - The variable is set to the directory path where "full_sys" is found (i.e. the output of $(find) for full_sys)
    - <arg name="rviz_file" default="$(arg home_dir)/cfg/robot.rviz"/>
      - This creates a variable caleld "rviz_file"
      - The variable is set to $(home_dir)/cfg/robot.rviz
      - Note the variable substitution syntax of $(arg home_dir)
+
+
+
+Doxygen
+========
+1. Generate the Doxygen documentation by running `rosdoc_lite .` (note the '.') from inside the package
+   to create a doc/ folder in the package's directory
+2. View the generated documentation by running `open doc/html/index.html`
+3. For more details, see the Help_Files/doxygen.txt file in the repo
 
 
 
