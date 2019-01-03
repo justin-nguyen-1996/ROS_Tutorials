@@ -44,6 +44,8 @@ Creating a ROS workspace and packages
      - roscpp
      - std_msgs
      - tf
+     - tf2
+     - tf2_ros
      - geometry_msgs
      - sensor_msgs
      - nav_msgs
@@ -113,6 +115,17 @@ Launch Files
      - This creates a variable caleld "rviz_file"
      - The variable is set to $(home_dir)/cfg/robot.rviz
      - Note the variable substitution syntax of $(arg home_dir)
+   - <include file="$(find package_name)/launch/node1.launch"/>
+     - This includes the contents of another file
+
+
+
+CMakeLists.txt Files
+====================
+1. If following the "3 files per class" approach (one .cpp for the class source file, one .h for the class header,
+   one .cpp for the node executable)
+   - You'll need to modify the CMakeLists.txt file so that everything gets linked properly
+   - https://answers.ros.org/question/204869/c-one-file-class-in-node-to-three-files-class-node-and-header/
 
 
 
@@ -135,3 +148,11 @@ Miscellaneous Info
 6. SDF (Simulation Description Format) - a type of format used to describe all elements of the robot and its world
 7. If the LaserScan messages aren't being displayed in rviz but everything looks right
    - Try setting the "size" of the LaserScan points to be bigger in rviz (e.g. 0.05 instead of 0.01)
+8. If you get a weird error when running `catkin build` (something like "current CMAKE_PREFIX doesn't match the
+cached one. Run catkin clean to fix") and you keep getting this error even though you run `catkin clean`
+   - Try running `catkin clean`
+   - Then `rm -rf .catkin_tools/` in the top-level folder
+   - Then `catkin init`
+   - Then `catkin build`
+   - The issue deals with how CMAKE_PREFIX and ROS_PACKAGE_PATH conflict or something like that
+   - Try manually setting ROS_PACKAGE_PATH to '' because it gets cached sometimes then close and re-open the terminal

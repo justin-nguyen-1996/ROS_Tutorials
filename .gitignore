@@ -5,4 +5,6 @@ build/
 logs/
 devel/
 doc/
+install/
 .catkin_tools/
+.clang_format
