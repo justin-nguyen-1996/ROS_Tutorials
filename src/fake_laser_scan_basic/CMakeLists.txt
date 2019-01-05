@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 2.8.3)
-project(fake_laser_scan)
+project(fake_laser_scan_basic)
 
 ## Compile as C++11, supported in ROS Kinetic and newer
 # add_compile_options(-std=c++11)
@@ -200,5 +200,5 @@ include_directories(
 ## Add folders to be run by python nosetests
 # catkin_add_nosetests(test)
 
-add_executable(fake_laser_scan src/fake_laser_scan.cpp)
-target_link_libraries(fake_laser_scan ${catkin_LIBRARIES})
+add_executable(fake_laser_scan_basic src/fake_laser_scan_basic.cpp)
+target_link_libraries(fake_laser_scan_basic ${catkin_LIBRARIES})
