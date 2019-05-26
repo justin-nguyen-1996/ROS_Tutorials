@@ -1,0 +1,11 @@
+
+<!-- <library path="lib/libpolygon_plugins"> -->
+<!-- NOTE: this has to match lib/libxxx where xxx is the add_library name in CMakeLists.txt -->
+<library path="lib/libpluginlib_tutorials"> 
+  <class type="polygon_plugins::Triangle" base_class_type="polygon_base::RegularPolygon">
+    <description>This is a triangle plugin.</description>
+  </class>
+  <class type="polygon_plugins::Square" base_class_type="polygon_base::RegularPolygon">
+    <description>This is a square plugin.</description>
+  </class>
+</library>
